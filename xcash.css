@@ -1,3 +1,10 @@
+*{
+    font-family: 'poppins', sans-serif;
+    color: white;
+}
+.body{
+    overflow: hidden;
+}
 .header-top{
     background-color: #1a5e92;
 }
@@ -9,19 +16,32 @@
     background-color: #007bff; 
     color: white;
 }
-.logo{
-    min-width: 50px;
-    max-width: 100px;
-}
 .navbar{
     background-color: #013c6c;
+    width: 100%;
+    overflow: hidden;
+    position: sticky;
 }
-.section{
+.navbar-brand img {
+    width: auto;
+    height: 40px;
+}
+.nav-item .nav-link{
+    color: white !important;
+}
+.nav-item .nav-link:hover{
+    color: blue !important;
+    
+}
+.hero{
     background-image: url('./Assets/home-background.jpg');
     height: 100vh;
-    width: 100vw;
+    width: 100%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+.intro-para{
+    padding-top: 30px;
 }
   
 
