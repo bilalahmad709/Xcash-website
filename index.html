@@ -15,8 +15,14 @@
     <!-- Fontawsome link -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 
+    <!-- Line awsome link / it is same like fontawsome -->
+    <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/font-awesome-line-awesome/css/all.min.css" >
+
     <!-- Animate.style link -->
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
+    <!-- wow animation -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/wow/1.1.2/wow.min.js" integrity="sha512-Eak/29OTpb36LLo2r47IpVzPBLXnAMPAVypbSZiZ4Qkf8p/7S/XRG5xp7OKWPPYfJT6metI+IORkR5G8F900+g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
 
     <title>XCash</title>
 </head>
@@ -190,8 +196,8 @@
                           <a href="about-us" class="btn btn-primary mt-5">Know More</a>
                         </div>
                         <div class="col-xl-5 order-xl-2 order-1">
-                          <div class="mt-sm-3">
-                            <img src="./Assets/about-main-img.jpg" alt="image" class="img-fluid">
+                          <div class="m-2">
+                            <img src="./Assets/about-main-img.jpg" alt="image" class="img-fluid about-main-img">
                           </div>
                           <div>
                             <button class="btn btn-primary position-relative translate-middle">
@@ -202,16 +208,62 @@
                       </div>
                     </div>
                   </div>
+                  <!-- end of the about section -->
+
+                  <!-- Services section -->
+                  <section class="pt-100 pb-150 position-relative z-index-2 section-bg--2 section-shape">
+                    <div class="section-wave-img opacity50">
+                      <img src="./Assets/wave-img.png" alt="image" class="img-fluid">
+                  </div>
+                  <div class="container">
+
+                    <!-- start of services section row 1 -->
+                    <div class="row justify-content-center">
+                    <div class="col-lg-6">
+                      <div class="section-header text-center" data-aos="fade-up">
+                        <h2 class="section-title text-white">What we serve our customer</h2>
+                        <p class="mt-3 text-white">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis</p>
+                      </div>
+                    </div>
+                  </div>
+                  <!-- end of services section row 1 -->
+
+                  <!-- start of services section row 2 -->
+                   <div class="row gy-4">
+                    
+                    <!-- card 1 -->
+                    <div class="col-lg-4 col-md-6" data-aos="fade-up">
+                      <div class="service-card text-center">
+                        <div class="dotted-wrapper"></div>
+                        <div class="service-card__icon">
+                          <i class="fa-solid fa-wallet"></i>
+                             </div>
+                            <div class="service-card__content mt-4">
+                              <h3 class="title">Complete Wallet</h3>
+                              <p class="mt-3">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+                          </div>
+                      </div>
+                    </div>
+
+                   </div>
+                   <!-- end of services section row 2 -->
+                  </div>
+
+                  </section>
           
          </div>
+         <!-- end of the main container -->
+
          <!-- aos animation link      -->
          <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
          <script>
            AOS.init({
             offset: 300,
             duration: 3000,
+            easing: 'ease',
            }
            );
          </script>
+         
 </body>
 </html>

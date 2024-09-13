@@ -35,7 +35,165 @@
     background-repeat: no-repeat;
 }
 
+/* About section CSS */
+.award-list {
+    margin: -0.4375rem -0.625rem;
+}
+.award-list li {
+    margin: 0.4375rem 0.625rem;
+}
+.award-list li img {
+    max-width: 6.25rem;
+}
+@media (max-width: 480px) {
+    .award-list li img {
+        max-width: 4.375rem;
+    }
+    
+}
 
+/* Service section css start */
+.section-bg--2{
+    background-color: #002046;
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    height: auto;
+}
+.section-wave-img{
+    position: absolute;
+
+    z-index: 1;
+}
+.opacity50{
+    opacity: 0.5;
+}
+
+.service-card{
+    border: 2px solid #4663ee73 !important
+}
+
+.service-card:hover{
+    box-shadow: 0 5px 15px 1px #4663ee40 !important
+}
+.service-card::before {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 80%;
+    clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    background-color: #002550;
+    z-index: -1;
+    animation: grow 7s infinite linear;
+}
+.service-card::after {
+    position: absolute;
+    content: '';
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 82%;
+    clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    background-color: #004393;
+    z-index: -2;
+    animation: grow 7s infinite linear;
+}
+.service-card .dotted-wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    background-image: radial-gradient(#fff 20%, transparent 0), radial-gradient(#fff 20%, transparent 0);
+    background-size: 10px 10px;
+    background-position: 0 0, 25px 25px;
+    opacity: 0.08;
+    z-index: -1;
+}
+.service-card__icon {
+    font-size: 66px;
+    line-height: 1;
+    color: #4582ff;
+}
+.service-card__content .title {
+    color: #fff;
+}
+.service-card__content p {
+    color: #f2f2f2;
+}
+@-webkit-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+@-moz-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+@-ms-keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+@keyframes grow {
+    0% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+    25% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    50% {
+        clip-path: polygon(51% 67%, 80% 71%, 100% 45%, 100% 100%, 0 100%, 0 78%, 30% 79%);
+    }
+    75% {
+        clip-path: polygon(48% 70%, 76% 63%, 100% 41%, 100% 100%, 0 100%, 0 78%, 25% 81%);
+    }
+    100% {
+        clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
+    }
+}
+
+/* Service section css end */
   
 
 
