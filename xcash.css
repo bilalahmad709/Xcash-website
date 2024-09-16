@@ -57,20 +57,61 @@
     background-color: #002046;
     position: absolute;
     z-index: 2;
+    padding-bottom: 100px;
     width: 100%;
     height: auto;
 }
+.section-shape {
+    -webkit-clip-path: polygon(0 0, 100% 0, 100% 84%, 82% 95%, 48% 100%, 0 100%);
+    clip-path: polygon(0 0, 100% 0, 100% 84%, 82% 95%, 48% 100%, 0 100%);
+}
+@media (max-width: 1199px) {
+    .section-shape {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 95%, 82% 98%, 48% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 95%, 82% 98%, 48% 100%, 0 100%);
+    }
+}
+@media (max-width: 575px) {
+    .section-shape {
+        -webkit-clip-path: polygon(0 0, 100% 0, 100% 98%, 100% 98%, 75% 100%, 0 100%);
+        clip-path: polygon(0 0, 100% 0, 100% 98%, 100% 98%, 75% 100%, 0 100%);
+    }
+}
 .section-wave-img{
+    /* position: absolute;
+    width: 100%;
+    height: auto;
+    z-index: 1; */
     position: absolute;
-
-    z-index: 1;
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: -1;
 }
 .opacity50{
     opacity: 0.5;
 }
 
-.service-card{
-    border: 2px solid #4663ee73 !important
+.service-card {
+    border: 2px solid #4663ee73 !important;
+    padding: 50px 30px;
+    background-color: #002550;
+    border-radius: 8px;
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    -ms-border-radius: 8px;
+    -o-border-radius: 8px;
+    overflow: hidden;
+    position: relative;
+    border: 2px solid rgba(69, 130, 255, 0.45);
+    position: relative;
+    z-index: 1;
+}
+
+@media (max-width: 1199px) {
+    .service-card {
+        padding: 2.1875rem 1.25rem;
+    }
 }
 
 .service-card:hover{
@@ -192,8 +233,34 @@
         clip-path: polygon(46% 66%, 76% 64%, 100% 41%, 100% 100%, 0 100%, 0 79%, 26% 79%);
     }
 }
+/* end of Service section css  */
 
-/* Service section css end */
+/* Why section css */
+.z-index-2 {
+    z-index: 2;
+}
+.why-section-img{
+    background-image: url('./Assets/why-section-bg-img.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.why-section-icon{
+    min-width: 40px;
+    max-width: 100px;
+}
+.choose_card{
+    margin: auto;
+    padding: 20px;
+    border-radius: 6px;
+    box-shadow: 2px 3px 5px gray;
+}
+.choose_card:hover{
+    border: 1px solid rgb(69, 64, 64);
+    border-radius: 8px;
+    box-shadow: 2px 2px 4px gray;
+}
+/* why section css end */
   
 
 
