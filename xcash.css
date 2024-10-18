@@ -247,19 +247,23 @@
     background-repeat: no-repeat;
 }
 .why-section-icon{
-    min-width: 40px;
-    max-width: 100px;
+    min-width: 30px;
+    max-width: 60px;
 }
+
 .why-card{
     margin: auto;
     padding: 20px;
     border-radius: 6px;
     box-shadow: 2px 3px 5px gray;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
-.choose_card:hover{
-    border: 1px solid rgb(69, 64, 64);
+
+.why-card:hover{
     border-radius: 8px;
-    box-shadow: 2px 2px 4px gray;
+    box-shadow: 2px 2px 30px gray;
+    transform: scale(1.05);
+    
 }
 /* why section css end */
   
@@ -547,18 +551,146 @@ span {
 /* footer css start */
 .footer{
     background-color: #002046;
-}
-
-.footer_sec_bg{
     background-image: url('./Assets/footer_bg.png');
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
 }
+
 .Footer_register_row{
     background-color: #4864ec;
 }
 
+.footer-link-list li{
+    list-style-type: none;
+}
+
+.footer_links_heading{
+    position: relative;
+    padding-left: 40px;
+}
+
+.footer_links_heading::before{
+    content: '';
+    background: linear-gradient(to right, rgb(123, 123, 233), rgb(135, 51, 51), rgb(205, 116, 130));
+    height: 3px;
+    width: 40px;
+    position: absolute;
+    left: 50px;
+    top:50%;
+    border-radius: 10px;
+}
+
+.footer_anchors{
+    text-decoration: none;
+    color: white;
+}
+
+/* footer contact portion Css */
+.footer-contact{
+    background-color: #082c64;
+}
+
+.email-icon i{
+    background-color:#004393;
+    font-size: 20px;
+    box-shadow: 0 0 15px rgba(206, 212, 235, 0.5);
+}
+.reserved_footer{
+    background-color: #001937;
+}
+/* End of Home Page CSS */
+
+
+/* START OF ABOUT PAGE CSS */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9;
+    background-color: transparent;
+}
+.select{
+    background-color: transparent;
+}
+
+.select option{
+    background-color: rgb(47, 47, 150);
+}
+
+/* inner hero  */
+.inner-hero {
+    background-image: url('/Assets/About-inner-hero.jpg');
+    padding-top: 13.75rem;
+    padding-bottom: 5rem;
+    position: relative;
+    z-index: 1;
+}
+@media (max-width: 1199px) {
+    .inner-hero {
+        padding-top: 11.875rem;
+    }
+}
+@media (max-width: 400px) {
+    .inner-hero {
+        padding-top: 15.625rem;
+    }
+}
+.inner-hero::before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #002046;
+    opacity: 0.7;
+    z-index: -1;
+}
+
+.navbar-about{
+    background-color: transparent;
+    backdrop-filter: blur(20px);
+    -webkit-backdrop-filter: blur(10px);
+}
+
+.section-subtitle{
+    position: relative;
+    left: 5px;
+}
+.header__bottom.sticky {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
+    background-color:#001937
+}
+.years-of-exp{
+    background-color: #007bff;
+    position: relative;
+    display: inline-block;
+    left: -40px;
+    top:-30px
+}
+
+
+/* DEVELOPER Page CSS SECTION */
+.documentation-sidebar{
+    position: relative;
+}
+.documentation-sidebar li .get-start::before{
+    position: absolute;
+    content: '';
+    width: 30px;
+    height: 3px;
+    background-color: #007bff;
+    top: 5%;
+    left: 0;
+
+}
+/* DEVELOPER Page CSS SECTION end */
 
 
 
