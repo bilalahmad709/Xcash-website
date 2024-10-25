@@ -4,65 +4,111 @@
     margin: 0;
     padding: 0;
 }
-body{
-    overflow-x: hidden;
-}
-.header-top{
-    background-color: #1a5e92;
-}
-.dropdown button:hover{
-    background-color: #1a5e92;
-    color: white;
-}
-.dropdown-item:hover {
-    background-color: #007bff; 
-    color: white;
+
+/* navbar css start */
+
+.navbar-brand img{
+    text-decoration: none;
+    display: inline-block;
+    font-family: "Open Sans", sans-serif;
+    min-width: 20px;
+    max-width: 150px;
 }
 
 .navbar{
-    background-color: #013c6c;  
+    background-color: rgb(27, 27, 76);
+}
+/* navbar css end */
+
+.main-body{
+    position: relative;
+    overflow: hidden;
 }
 
-.navbar-brand img {
-    width: 13.9375rem;
-}
-@media (max-width:700px){
-    .navbar-brand img{
-        width: 6rem;
-    }
-}
-
-.nav-item .nav-link{
-    color: white ;
-}
-.nav-item .nav-link:hover{
-    color: blue;
-}
-.navbar-toggler-icon {
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='rgba%28255, 255, 255, 1%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
-  }
-
+/* Hero section css start */
 .hero{
-    background-image: url('./Assets/home-background.jpg');
-    min-height: 100%;
-    background-size: cover;
+    background-image:url('./Assets/hero-background.jpg');
+    width: 100%;
+    min-height: 100vh;
     background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
 }
 
-/* About section CSS */
+.we-are-xcash {
+    position: relative; /* Make sure the text element is positioned relative */
+    padding-left: 35px; /* Add padding to make room for the line */
+    padding-right: 35px;
+  }
+  
+  .we-are-xcash::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(103, 103, 205);
+    left: -10px; /* Adjust left to be 2px away from the text */
+    top: 50%;
+    transform: translateY(-50%); /* Vertically center the line */
+  }
+  .we-are-xcash::after {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(103, 103, 205);
+    right: -10px; /* 30px for line + 2px gap */
+    top: 50%;
+    transform: translateY(-50%);
+  }
+/* Hero section css end */
 
-.award-list li {
-    margin: 0.4375rem 0.625rem;
+/* Brand section start */
+.brand-icon{
+    min-width: 40px;
+    max-width: 100px;
+    min-height: 20px;
+    max-height: 30px;
 }
-.award-list li img {
-    max-width: 6.25rem;
+/* Brand section end */
+
+/* About section start */
+
+.about-subtitle {
+    position: relative; /* Make sure the text element is positioned relative */
+    padding-left: 40px; /* Add padding to make room for the line */
 }
-@media (max-width: 480px) {
-    .award-list li img {
-        max-width: 4.375rem;
-    }
+
+.about-subtitle::before {
+    content: '';
+    position: absolute;
+    width: 30px;
+    height: 2px;
+    background-color: rgb(103, 103, 205);
+    left: 0px; /* Move the line to the left */
+    top: 50%; /* Center the line vertically */
+    transform: translateY(-50%); /* Vertically center the line */
+}
+
+.img-div img{
+    width: 95%;
+    padding-left: 50px;
     
 }
+.img-div p span{
+    background-image: url('/Assets/year-of-exp-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+@media screen and (max-width:768px) {
+    .img-div img{
+        margin-top: 20px;
+        width: 100%;
+        padding-left: 0px;           
+    }    
+}
+/* About section end */
 
 /* Service section css start */
 .section-bg--2{
@@ -248,36 +294,27 @@ body{
 /* end of Service section css  */
 
 /* Why section css */
-.z-index-2 {
-    z-index: 2;
-}
+
 .why-section-img{
     background-image: url('./Assets/why-section-bg-img.png');
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
 }
-.why-section-icon{
+.card{
+    box-shadow: 1px 1px 3px rgb(147, 193, 204); 
+    transition: transform 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+.choose-card__icon img{
     min-width: 30px;
     max-width: 60px;
 }
 
-.why-card{
-    margin: auto;
-    padding: 20px;
-    border-radius: 6px;
-    box-shadow: 2px 3px 5px gray;
-    transition: transform 0.3s ease, box-shadow 0.3s ease;
-}
-
-.why-card:hover{
-    border-radius: 8px;
-    box-shadow: 2px 2px 30px gray;
-    transform: scale(1.05);
-    
-}
 /* why section css end */
-  
+
 /* Improve section css start */
 
 .section--bg2{
@@ -336,6 +373,7 @@ img {
 .align-items-center {
     align-items: center!important
 }
+/* Solution Section css end*/
 
 /* Payment gateway css */
 .payment_bg_img{
@@ -377,45 +415,14 @@ img {
 }
 /* Payment gateway css end*/
 
- /* what people say section css start */
- .section-subtitle {
-    font-family: "Maven Pro", sans-serif; 
-    font-size: 1rem; 
-    font-weight: 500; 
-}
 
-.section-subtitle.border-left {
-    padding-left: 2.1875rem; 
-    position: relative; 
-    z-index: 1;
+ /* What people say section start  */
+.carousel-caption{
+    background-image: url('/Assets/slider-bg.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: start;
 }
-
-.section-subtitle.border-left::before {
-    position: absolute; 
-    content: ''; 
-    top: 50%; 
-    left: 0; 
-    width: 25px; 
-    height: 2px; 
-    background-color: #4582ff; 
-    transform: translateY(-50%); 
-}
-*,::after,::before {
-    box-sizing: border-box
-}
-/* testimonial section css start */
-.slide_desc{
-    position: relative;
-    background-color: #002046;
-    margin-left: 35%;
-    margin-top: -70px;
-    min-width: 200px;
-    max-width: 400px;
-    z-index: 2;
-    padding: 4px;
-    border-radius: 5px;
-}
-/* testimonial section css end */
 
 
 /* Subscription section Css Start */
@@ -468,9 +475,12 @@ img {
 
 .subscription-form{
     border: 3px solid #4663ee;
-    display: inline-block;
+    display: flex; /* Added flex display */
+    align-items: center;
     border-radius: 40px;
-    padding: 2px 2px;
+    padding: 2px;
+    gap: 8px; /* Add gap for spacing */
+    flex-wrap: wrap;
 }
 .input--group {
     position: relative; 
@@ -488,8 +498,7 @@ button,input,textarea {
     font-weight: 500;
     border-radius: 40px;
     padding: 15px 25px;
-    border: 0;     
-    padding-right: 177px;
+    flex: 1; /* Allows input to take available space */
     border: none !important;
 }
 .subscription-form .btn {
@@ -530,12 +539,8 @@ span {
 }
 /* Subscription section Css end */
 
-    /* Announces and article button section start */
-.blog-card:hover{
-    box-shadow: 3px 3px 5px gray;
-    transform: scale(1.1);
-    transition: transform 1s ease;
-}
+/* Announces and article button section start */
+
 .blog-card__meta{
     position: relative;
     top: -75px;
@@ -561,6 +566,7 @@ span {
 }
 
 /* Announces and article button section end */
+
 
 /* footer css start */
 .footer{
@@ -688,52 +694,6 @@ span {
     left: -40px;
     top:-30px
 }
-
-/* Footer section css end */
-
-
-/* DEVELOPER Page CSS SECTION */
-.documentation-sidebar{
-    position: relative;
-}
-.documentation-sidebar li .get-start::before{
-    position: absolute;
-    content: '';
-    width: 30px;
-    height: 3px;
-    background-color: #007bff;
-    top: 5%;
-    left: 0;
-
-}
-
-.desc-required{
-    color: rgb(230, 84, 109);
-    background-color: rgb(243, 200, 207);
-    border: 2px solid rgb(227, 62, 89);
-    border-radius: 40px;
-    padding: 1px 15px;
-}
-.desc-optional{
-    color: rgb(8, 99, 144);
-    background-color: rgb(193, 212, 224);
-    border: 2px solid rgb(36, 86, 108);
-    border-radius: 40px;
-    padding: 1px 15px;
-}
-/* DEVELOPER Page CSS SECTION end */
-
-/* CONTACT SECTION CSS START */
-.address-icon{
-    color:white;
-    background: #004393;
-    border-radius: 15px;
-    font-size: 30px;
-}
-/* CONTACT SECTION CSS END */
-
-
-
 
 
 
