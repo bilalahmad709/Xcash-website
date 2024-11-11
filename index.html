@@ -12,6 +12,9 @@
   <!-- fontawsome link -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
 
+  <!-- Animate.style link -->
+<link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+
   <!-- bootstrap icons library link -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
 
@@ -78,24 +81,23 @@
     <section class="hero">
       <div class="container">
         <div class="row justify-content-center">
-          <div class="col-lg-7 text-center">
+          <div class="col-lg-7 text-center" data-aos="fade-up">
             <!-- we are xcaxh -->
             <div class="mt-5 ">
-              <span class="we-are-xcash"> We are Xcash</span>
+              <span class="we-are-xcash" > We are Xcash</span>
             </div>
 
-            <h2 class="hero-title mt-3">The Ultimate Solution for e-Wallet Service</h2>
+            <h2 class="hero-title mt-3" data-aos="fade-up">The Ultimate Solution for e-Wallet Service</h2>
             <p class="hero-desc">Complete solution for mobile money and wallet system. Comes with User, Agent, and
               Merchant system with eCommerce API and QR code ready.</p>
 
             <!-- Button group -->
-            <div class="buttons-group mt-5  justify-content-center">
+            <div class="buttons-group mt-5 d-flex align-items-center justify-content-center">
               <a href="" class="btn btn-primary">Get started</a>
-              <a href="" class="btn">
-                <span><i class="bi bi-play-circle-fill fs-1 text-primary "></i></span>
+              <a href="" class="btn d-flex align-items-center">
+                <i class="bi bi-play-circle-fill fs-1 text-primary mx-2"></i>
                 <span class="">See How</span>
               </a>
-
             </div>
 
           </div>
@@ -201,7 +203,7 @@
         <div class="row gy-4">
 
           <!-- card 1 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6 " data-aos="fade-right">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -216,7 +218,7 @@
           </div>
 
           <!-- card 2 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-up">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -231,7 +233,7 @@
           </div>
 
           <!-- card 3 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-left">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -246,7 +248,7 @@
           </div>
 
           <!-- card 4 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-right">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -261,7 +263,7 @@
           </div>
 
           <!-- card 5 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-down">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -276,7 +278,7 @@
           </div>
 
           <!-- card 6 -->
-          <div class="col-lg-4 col-md-6">
+          <div class="col-lg-4 col-md-6" data-aos="fade-left">
             <div class="service-card text-center">
               <div class="dotted-wrapper"></div>
               <div class="service-card__icon">
@@ -705,7 +707,7 @@
            <div class="col-lg-6 md-10">
             <form action="" class="subscription-form">
               <div class="input--group">
-                <input type="email" name="" class="form--control" id="" placeholder="Enter Email">
+                <input type="email" name="" class="form--control w-100" id="" placeholder="Enter Email">
                <button type="submit" class="btn btn--base rounded-0">
                 <span>Subscribe</span>
                 <span class="btn-icon">
@@ -1006,12 +1008,20 @@
     </footer>  
     <!-- Footer section end -->
 
-
-
   </div>
   <!-- Main body end -->
 
-
+<!-- aos animation link -->
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+<script>
+  AOS.init({
+   offset: 300,
+   duration: 3000,
+   easing: 'ease',
+   once: true,
+  }
+  );
+</script>
 
   <!-- Bootstrap js link -->
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"
